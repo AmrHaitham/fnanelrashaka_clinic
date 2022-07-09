@@ -65,7 +65,7 @@ class _TimeSlotsScreenState extends State<TimeSlotsScreen> {
                 children: [
                   SizedBox(
                     width: double.infinity,
-                    height: MediaQuery.of(context).size.height * 0.64,
+                    height: MediaQuery.of(context).size.height * 0.6,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,8 +170,8 @@ class _TimeSlotsScreenState extends State<TimeSlotsScreen> {
                 child: Container(
                     margin:
                     const EdgeInsets.only(right: 8, top: 5, bottom: 150),
-                    width: 350,
-                    height: 350,
+                    width: 320,
+                    height: 300,
                     child: Image.asset("assets/dr_mohamed.png")),
               )
             ],

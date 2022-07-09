@@ -140,7 +140,9 @@ class CodegenLoader extends AssetLoader{
   "Please_Enter_your_lastname": "Please enter your last name",
   "Last_name": "Last name*",
   "Already_payed": "Already Paid",
-  "Enter_Your_Price": "Enter Your Price"
+  "Enter_Your_Price": "Enter Your Price",
+  "session_ended": "Session Ended",
+  "Choose_day_of_book": "Choose day of book"
 };
 static const Map<String,dynamic> ar = {
   "clinic_booking": "حجز العيادة",
@@ -268,7 +270,9 @@ static const Map<String,dynamic> ar = {
   "Please_Enter_your_lastname": "من فضلك ادخل اسمك الاخير",
   "Last_name": "الاسم الأخير*",
   "Already_payed": "تم الدفع",
-  "Enter_Your_Price": "أدخل السعر"
+  "Enter_Your_Price": "أدخل السعر",
+  "session_ended": "انتهت الجلسة",
+  "Choose_day_of_book": "أختر يوم الحجز"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"en": en, "ar": ar};
 }

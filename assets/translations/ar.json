@@ -124,5 +124,7 @@
   "Please_Enter_your_lastname": "من فضلك ادخل اسمك الاخير",
   "Last_name": "الاسم الأخير*",
   "Already_payed": "تم الدفع",
-  "Enter_Your_Price": "أدخل السعر"
+  "Enter_Your_Price": "أدخل السعر",
+  "session_ended": "انتهت الجلسة",
+  "Choose_day_of_book": "أختر يوم الحجز"
 }

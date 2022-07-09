@@ -140,7 +140,7 @@ class _ChosePaymentState extends State<ChosePayment> {
                       children: [
                         SizedBox(
                           width: double.infinity,
-                          height: MediaQuery.of(context).size.height*0.57,
+                          height: MediaQuery.of(context).size.height*0.54,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -513,8 +513,8 @@ class _ChosePaymentState extends State<ChosePayment> {
                       alignment: Alignment.center,
                       child: Container(
                           margin:const EdgeInsets.only(right: 8,top: 5,bottom: 185),
-                          width:320,
-                          height:320,
+                          width: 320,
+                          height: 250,
                           child: Image.asset("assets/payment.png")
                       ),
                     )

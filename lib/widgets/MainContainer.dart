@@ -27,7 +27,7 @@ class MainContainer extends StatelessWidget {
             children: [
               SizedBox(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height*0.17,
+                height: MediaQuery.of(context).size.height*0.18,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

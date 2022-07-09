@@ -127,5 +127,7 @@ abstract class  LocaleKeys {
   static const Last_name = 'Last_name';
   static const Already_payed = 'Already_payed';
   static const Enter_Your_Price = 'Enter_Your_Price';
+  static const session_ended = 'session_ended';
+  static const Choose_day_of_book = 'Choose_day_of_book';
 
 }

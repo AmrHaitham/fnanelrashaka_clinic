@@ -170,7 +170,7 @@ class PackgesScreen extends StatelessWidget {
                                           color: Constants.theardColor),
                                       child: Center(
                                         child: Text(
-                                          "${per.toInt()}%",
+                                          (context.locale.toString()!="ar")?"${per.toInt()}%":"%${per.toInt()}",
                                           style: TextStyle(color: Colors.white),
                                         ),
                                       ),

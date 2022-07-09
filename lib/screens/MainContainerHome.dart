@@ -1,20 +1,37 @@
+import 'dart:async';
+
 import 'package:fanan_elrashaka_clinic/helper/dialogs.dart';
 import 'package:fanan_elrashaka_clinic/screens/MainScreen.dart';
 import 'package:fanan_elrashaka_clinic/translations/locale_keys.g.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import '../Constants.dart';
-class MainContainerHome extends StatelessWidget {
+class MainContainerHome extends StatefulWidget {
   final String title;
   final Widget child;
   final bool backIcon;
   final Color patternColor;
   final smallTitle;
    MainContainerHome({Key? key,required this.title,required this.child,required this.backIcon,required this.patternColor, this.smallTitle}) : super(key: key);
+
+  @override
+  State<MainContainerHome> createState() => _MainContainerHomeState();
+}
+
+class _MainContainerHomeState extends State<MainContainerHome> {
   Dialogs _dialogs = Dialogs();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Timer(const Duration(minutes: 5), () {
+      _dialogs.alterToHomeDialogBuilder(context, LocaleKeys.session_ended.tr());
+    });
+  }
   @override
   Widget build(BuildContext context) {
-    bool _smallTitle = smallTitle?? false;
+    bool _smallTitle = widget.smallTitle?? false;
     return WillPopScope(
       onWillPop: (){
         return Future.value(false);
@@ -44,7 +61,7 @@ class MainContainerHome extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Visibility(
-                            visible: backIcon,
+                            visible: widget.backIcon,
                             child: InkWell(
                               onTap: ()
                               {
@@ -68,7 +85,7 @@ class MainContainerHome extends StatelessWidget {
                           Container(
                               margin:(context.locale.toString()=="en")?const EdgeInsets.only(left: 30,top: 20):const EdgeInsets.only(right: 30,top: 20),
                               height:35,
-                              child: Text("${title}",style:(_smallTitle)? Constants.smallTitleText:Constants.titleText,)
+                              child: Text("${widget.title}",style:(_smallTitle)? Constants.smallTitleText:Constants.titleText,)
                           )
                         ],
                       ),
@@ -89,11 +106,11 @@ class MainContainerHome extends StatelessWidget {
                       borderRadius:const BorderRadius.only(topLeft: Radius.circular(12),topRight: Radius.circular(12)),
                       image: DecorationImage(
                         image:const AssetImage("assets/pattern.png"),
-                        colorFilter: ColorFilter.mode(patternColor.withOpacity(0.025), BlendMode.dstATop),
+                        colorFilter: ColorFilter.mode(widget.patternColor.withOpacity(0.025), BlendMode.dstATop),
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: child,
+                    child: widget.child,
                   ),
                 ),
               ],

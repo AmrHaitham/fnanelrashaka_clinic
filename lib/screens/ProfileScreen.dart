@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           SizedBox(
                             width: double.infinity,
-                            height: MediaQuery.of(context).size.height * 0.21,
+                            height: MediaQuery.of(context).size.height * 0.25,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,

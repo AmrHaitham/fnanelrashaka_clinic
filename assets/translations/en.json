@@ -124,5 +124,7 @@
   "Please_Enter_your_lastname": "Please enter your last name",
   "Last_name": "Last name*",
   "Already_payed": "Already Paid",
-  "Enter_Your_Price": "Enter Your Price"
+  "Enter_Your_Price": "Enter Your Price",
+  "session_ended": "Session Ended",
+  "Choose_day_of_book": "Choose day of book"
 }

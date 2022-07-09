@@ -64,7 +64,7 @@ class _CalenderBookScreenState extends State<CalenderBookScreen> {
                 children: [
                   SizedBox(
                     width: double.infinity,
-                    height: MediaQuery.of(context).size.height * 0.64,
+                    height: MediaQuery.of(context).size.height * 0.6,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,8 +170,8 @@ class _CalenderBookScreenState extends State<CalenderBookScreen> {
                 child: Container(
                     margin:
                         const EdgeInsets.only(right: 8, top: 5, bottom: 150),
-                    width: 350,
-                    height: 350,
+                    width: 320,
+                    height: 300,
                     child: Image.asset("assets/dr_mohamed.png")),
               )
             ],
@@ -225,7 +225,7 @@ class _CalendarRowState extends State<CalendarRow> {
               text: (widget.book_by_time_slots==true)?LocaleKeys.Select_time_of_appoiment.tr():LocaleKeys.Book_Appoiment.tr(),
               press: (){
                 if(selectedIndex==null){
-                  _dialogs.alterDialogBuilder(context, "Choose day of booking");
+                  _dialogs.alterDialogBuilder(context, LocaleKeys.Choose_day_of_book.tr());
                 }else{
                   print(widget.book_by_time_slots);
                   if(widget.book_by_time_slots==true){
