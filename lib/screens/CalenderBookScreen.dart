@@ -217,10 +217,11 @@ class _CalendarRowState extends State<CalendarRow> {
               }
           ),
         ),
+        Expanded(child: Container()),
         Visibility(
           visible: (widget.appointments.length>=1),
           child: Padding(
-            padding: const EdgeInsets.only(top:15.0),
+            padding: const EdgeInsets.only(bottom:10.0),
             child: DefaultButton(
               text: (widget.book_by_time_slots==true)?LocaleKeys.Select_time_of_appoiment.tr():LocaleKeys.Book_Appoiment.tr(),
               press: (){

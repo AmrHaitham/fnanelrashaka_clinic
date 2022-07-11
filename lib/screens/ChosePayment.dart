@@ -397,8 +397,9 @@ class _ChosePaymentState extends State<ChosePayment> {
                                       ],
                                     ),
                                   ),
+                                  Expanded(child: Container()),
                                   Padding(
-                                    padding: const EdgeInsets.only(top:5.0),
+                                    padding: const EdgeInsets.only(bottom:10.0),
                                     child: DefaultButton(
                                       loading: _isloading,
                                       text: (_selectedIndex==1)?LocaleKeys.Booking.tr():(_selectedIndex==0)?LocaleKeys.Pay.tr():LocaleKeys.Add_Phone_number.tr(),

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "fanan_elrashaka_clinic")
-set(APPLICATION_ID "com.amrhaitham.fanan_elrashaka_clinic")
+set(BINARY_NAME "Fanan Elrashaka")
+set(APPLICATION_ID "com.amrhaitham.fananelrashaka")
 
 cmake_policy(SET CMP0063 NEW)
 
