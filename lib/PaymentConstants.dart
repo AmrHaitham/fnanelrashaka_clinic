@@ -17,9 +17,6 @@
  String PaymobWalletUrl='';
 
  int onlineBookingID=6;
-
-
-
  //test
  // String IntegrationIDCard='253179';
  //  String IntegrationIDCardMobileWallet='2344476';
