@@ -107,7 +107,7 @@ class PackgesScreen extends StatelessWidget {
 
                                                             Navigator.of(context).push(MaterialPageRoute(builder: (context) =>
                                                                 ChosePayment(
-                                                                  isPackage: false,
+                                                                  isPackage: true,
                                                                   title: "Packages",
                                                                   fee: double.parse(_price!),
                                                                   id: snapshot.data[index]['id'],
@@ -131,7 +131,7 @@ class PackgesScreen extends StatelessWidget {
                                   } else {
                                     Navigator.of(context).push(MaterialPageRoute(builder: (context) =>
                                         ChosePayment(
-                                                  isPackage: false,
+                                                  isPackage: true,
                                                   title: "Packages",
                                                   fee: snapshot.data[index]['fee'],
                                                   id: snapshot.data[index]['id'],
